@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: lemonchiffon;
+  /* background-color: lemonchiffon; */
 }
 
 .App-logo {
@@ -36,4 +36,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  color: #60485C;
+  text-shadow: 2.5px 3px 3px rgb(143, 143, 143);
+}
+
+h4 {
+  color: #60485C;
+  max-width: 72%;
+  display: inline-block;
+
+}
+
+h5 {
+  color: #60485C;
+}
+
+hr {
+  /* border-top: 3px solid #bbb; */
+  max-width: 35%;
 }

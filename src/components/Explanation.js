@@ -4,7 +4,7 @@ const Explanation = (props) => {
     const { expl } = props;
     return (
         <div>
-            <h3>{expl}</h3>
+            <h4>{expl}</h4>
         </div>
     )
 }

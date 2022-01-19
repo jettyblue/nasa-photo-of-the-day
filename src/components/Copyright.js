@@ -4,7 +4,8 @@ const Copyright = (props) => {
     const { cpright } = props;
     return (
         <div>
-            <h3>Copyright: {cpright}</h3>
+            <hr></hr>
+            <h5>Copyright: {cpright}</h5>
         </div>
     )
 }
