@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { API_URL, API_KEY } from './constants';
+import styled from 'styled-components';
 
 import Copyright from './components/Copyright';
 import Explanation from './components/Explanation';
 import Image from './components/Image';
 
 import "./App.css";
+
+const StyledHeader = styled.h1`
+  color: #60485C;
+  text-shadow: 2.5px 3px 3px rgb(143, 143, 143);
+`
 
 function App() {
 
@@ -16,7 +22,7 @@ function App() {
     const fetchData = () => {
     axios.get(`${API_URL}?api_key=${API_KEY}`)
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         setNasaData(res.data);
       })
       .catch(err => {
@@ -29,11 +35,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
+      <StyledHeader>
         NASA Astronomy Picture of the Day! <span role="img" aria-label='go!'>🚀</span>
-      </h1>
+      </StyledHeader>
       <Image nasaURL={nasaData.url} />
-      <Explanation expl={nasaData.explanation} />
+      <Explanation text={nasaData.explanation} />
       <Copyright cpright={nasaData.copyright} />
     </div>
   );
