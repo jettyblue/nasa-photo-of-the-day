@@ -12,6 +12,10 @@ import "./App.css";
 const StyledHeader = styled.h1`
   color: #60485C;
   text-shadow: 2.5px 3px 3px rgb(143, 143, 143);
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+  }
 `
 
 function App() {
