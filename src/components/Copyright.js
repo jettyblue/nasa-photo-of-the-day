@@ -16,4 +16,6 @@ const Copyright = (props) => {
     )
 }
 
+//adding to push commits
+
 export default Copyright;
